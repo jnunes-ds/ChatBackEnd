@@ -2,7 +2,8 @@ import express, { request, response } from "express";
 
 const app = express();
 
-const PORT : Number = 3333;
+const PORT : number = 3333;
+
 
 app.get("/", (request, response) => {
     return response.json({
@@ -16,4 +17,6 @@ app.post("/users", (request, response) => {
     });
 });
 
-app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Server is running on port: ${PORT}`)
+});
