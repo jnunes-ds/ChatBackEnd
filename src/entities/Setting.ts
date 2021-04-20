@@ -24,7 +24,7 @@ class Setting {
     created_at: Date;
 
     constructor(){
-        !this.id ? uuid() : this.id;
+        this.id = !this.id ? uuid() : this.id;
     }
 }
 
